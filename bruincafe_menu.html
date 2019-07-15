@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Lettuce Olive Better > BruinCafé Menu </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Arimo">
+    <link rel="stylesheet" href="assets/pushy-buttons/css/pushy-buttons.css">
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="assets/circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="lob_logo.png">
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAdvHgYr47afQTdqDYE5OKLDy-Ok1_5TtE",
+		authDomain: "lettuce-olive-better-6a989.firebaseapp.com",
+		databaseURL: "https://lettuce-olive-better-6a989.firebaseio.com",
+		projectId: "lettuce-olive-better-6a989",
+		storageBucket: "",
+		messagingSenderId: "199181056448"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+	<link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+
+</head>
+<body>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="assets/circliful/js/jquery.circliful.min.js"></script>
+	<script src="./script.js"></script>
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="overhang/overhang.min.css" />
+	<script type="text/javascript" src="overhang/overhang.min.js"></script>
+
+	<div class="full-page">
+    	<div class="bg-image"> </div>
+		<div class="bg-text">
+			<ul class="menu">
+				<li class="menu"> <a href="index.html" class="menu"> Home </a> </li>
+				<li class="menu"> <a href="menus.html" class="menu"> Menus </a> </li>
+				<li class="menu"> <a href="past_orders.html" class="menu"> Past Orders </a> </li>
+				<li style="float:right"> <a href="settings.html" class="menu"> Settings </a> </li>
+								<a href="index.html" style="float:center" class="logo"><img src="assets/lob_logo.png"></a>
+
+			</ul>
+			<div class="top-text">
+				<h1> BruinCafé Menu </h1>
+			</div>
+			
+			<div class="gallery">
+				<div class="gallery_item" id="Honey_Mustard_Chicken_Bacon_Sandwich">
+					<img src="assets/Bruin_Cafe/Honey_Mustard_Chicken_Bacon_Sandwich.jpg" width="300" height="200">
+					<table>
+						<tr>
+							<td>
+								<div class="title"> HONEY MUSTARD CHICKEN BACON SANDWICH </div>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="desc">
+									Sliced Chicken Breast, Bacon, Swiss Cheese, Caramelized Onions, Jalapeños, Lettuce, and Honey-Mustard on a French Roll.
+									<div class="calories"> Calories: 886 </div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			
+				<div class="gallery_item" id="California_Turkey_Club">
+					<img src="assets/Bruin_Cafe/California_Turkey_Club.jpg" width="300" height="200">
+					<table>
+						<tr>
+							<td>
+								<div class="title"> CALIFORNIA TURKEY CLUB SANDWICH </div>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="desc">
+									Roasted Turkey Breast, Bacon, Sliced Avocado, Lettuce, Tomato, and Mayo on a Whole Wheat French Roll.
+									<div class="calories"> Calories: 710 </div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="gallery_item" id="Salmon_Salad_Sandwich">
+					<img src="assets/Bruin_Cafe/Salmon_Salad_Sandwich.jpg" width="300" height="200">
+					<table>
+						<tr>
+							<td>
+								<div class="title"> SALMON SALAD SANDWICH </div>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="desc">
+									Housemade Salmon Salad, Mesclun Lettuce Mix, and Dijon Mustard on a French Roll.
+									<div class="calories"> Calories: 577 </div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="gallery_item" id="Roasted_Vegetable_and_Hummus">
+					<img src="assets/Bruin_Cafe/Roasted_Vegetable_and_Hummus.jpg" width="300" height="200">
+					<table>
+						<tr>
+							<td>
+								<div class="title"> ROASTED VEGETABLE & HUMMUS SANDWICH </div>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<div class="desc">
+									Roasted Red Pepper, Grilled Portobello Mushrooms, Roasted Eggplant, Hummus, and Shredded Kale Salad on a Vegan Whole Wheat French Roll.
+									<div class="calories"> Calories: 478 </div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+    </div>
+</body>
+</html>

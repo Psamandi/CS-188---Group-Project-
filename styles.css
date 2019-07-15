@@ -1,0 +1,349 @@
+* {
+	font-family: "Helvetica";
+}
+
+ul.menu {
+	top: 0;
+	width: 100%;
+	height: 50px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	display: inline-block;
+	position: absolute;
+}
+
+li.menu {
+	float: left;
+}
+
+li a.menu {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+body, html {
+	height: 100%;
+}
+
+.full-page {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+}
+
+.bg-image {
+	background-image: url("assets/UCLA.jpg");
+	background-repeat: no-repeat;
+	/*filter: blur(7px);
+	-webkit-filter: blur(7px);*/
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	color: #33ccff;
+	font-family: "Helvetica";
+	font-size: 25px;
+}
+
+.bg-text {
+	color: #0e5ef2;
+	font-family: "Helvetica";
+	font-size: 25px;
+}
+
+.top-text {
+	position: absolute;
+	top: 14%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 20px;
+	color: #EE8B3E;
+	background-color: #3D85DB;
+	text-shadow: 1px 1px 0 rgba(0,0,0,1);
+	width: 100%;
+	border-radius: 5px;
+}
+
+
+.middle-text {
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold
+    bottom: 40;
+    font-size: 20px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,1);
+  color: white;
+  /*color : red;*/
+  width: 100%;
+  padding: -30px;
+
+  width: 55%;
+  height: 60%;
+  background: inherit;
+  
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  
+  box-shadow: 0 .5em 1em rgba(0,0,0,.2);
+  bottom: 40;
+  border-radius: 10px;
+  display: block;
+
+
+}
+
+.glass::after{
+
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-image: url("assets/UCLA.jpg");
+	box-shadow: inset 0 0 3000px rgba(255, 255,255, .2);
+	display: block;
+	filter: blur(30px);
+	
+
+}
+
+
+.order-button {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+div.gallery {
+	width: auto;
+	height: 60%;
+	position: absolute;
+	top: 25%;
+	left: 2.5%;
+	right: 2.5%;
+	/*
+	border-style: solid;
+	border-width: 10px;
+	*/
+	float: left;
+	text-align: center
+}
+
+div.gallery_item {
+	border: 7px solid #777;
+	background-color: white;
+	width: 20%;
+	height: 100%;
+	margin: 1%;
+	display: inline-block;
+}
+
+div.gallery_item:hover {
+	border: 7px solid #ccc;
+}
+
+div.gallery_item img {
+	width: 100%;
+	height: auto;
+}
+
+div.title {
+	padding: 10px;
+	text-align: center;
+	font-size: 15px;
+}
+
+div.desc {
+	padding: 10px;
+	text-align: left;
+	font-size: 12px;
+}
+
+div.calories {
+	padding-top: 10px;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+div.p-calories {
+	padding: 10px;
+	text-align: left;
+	font-size: 12px;
+}
+
+div.past-order {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  /*
+  border-style: solid;
+  border-width: 10px;
+  */
+  float: center;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.past-order_item {
+  border: 3px solid #777;
+  background-color: white;
+  width: 80%;
+  height: 40%;
+  margin: 1%;
+  display: inline-block;
+}
+
+.past-order_item:hover {
+  border: 3px solid #ccc;
+}
+
+img.p {
+	float:left;
+}
+
+.middle-text-calorie {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold
+    bottom: 40;
+    font-size: 25px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,1);
+  color: white;
+  /*color : red;*/
+  width: 100%;
+  padding: -30px;
+
+  width: 60%;
+  height: 60%;
+  background: inherit;
+  
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  
+  box-shadow: 0 .5em 1em rgba(0,0,0,.2);
+  bottom: 40;
+  border-radius: 10px;
+  display: block;
+
+
+}
+
+.glass-calorie::after{
+
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-image: url("assets/UCLA.jpg");
+	box-shadow: inset 0 0 3000px rgba(255, 255,255, .2);
+	display: block;
+	filter: blur(30px);
+	
+}
+
+#OpenNow > a > img{
+    /*border: 1px solid #ddd;*/
+    border-radius: 4px;
+    padding: 4px;
+    width: 80px;
+    height:50px;
+    
+}
+
+.middle-text-menu {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold
+    bottom: 40;
+    font-size: 25px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,1);
+  color: white;
+  /*color : red;*/
+  width: 100%;
+  padding: -30px;
+
+  width: 40%;
+  height: 57%;
+  background: inherit;
+  
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  
+  box-shadow: 0 .5em 1em rgba(0,0,0,.2);
+  bottom: 40;
+  border-radius: 10px;
+  display: block;
+
+
+}
+
+.glass-menu::after{
+
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-image: url("assets/UCLA.jpg");
+	box-shadow: inset 0 0 3000px rgba(255, 255,255, .2);
+	display: block;
+	filter: blur(30px);
+	
+}
+
+.logo img {
+	position: absolute;
+
+	display: inline-block;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	border-color: white;
+}
+

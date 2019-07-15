@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Lettuce Olive Better > Past Orders </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Arimo">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/pushy-buttons/css/pushy-buttons.css">
+    <link rel="stylesheet" href="assets/star-ratings/css/star-ratings.css">
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="assets/circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="lob_logo.png">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAdvHgYr47afQTdqDYE5OKLDy-Ok1_5TtE",
+		authDomain: "lettuce-olive-better-6a989.firebaseapp.com",
+		databaseURL: "https://lettuce-olive-better-6a989.firebaseio.com",
+		projectId: "lettuce-olive-better-6a989",
+		storageBucket: "",
+		messagingSenderId: "199181056448"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+	<link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+
+<!-- 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="assets/circliful/js/jquery.circliful.min.js"></script>
+ -->
+	
+</head>
+<body>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="stars/stars.min.js"></script>
+	<script src="./script.js"></script>
+	<script src="./p-script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="overhang/overhang.min.css" />
+	<script type="text/javascript" src="overhang/overhang.min.js"></script>
+	
+	<div class="full-page">
+    	<div class="bg-image"> </div>
+		<div class="bg-text">
+			<ul class="menu">
+				<li class="menu"> <a href="index.html" class="menu"> Home </a> </li>
+				<li class="menu"> <a href="menus.html" class="menu"> Menus </a> </li>
+				<li class="menu"> <a href="past_orders.html" class="menu"> Past Orders </a> </li>
+				<li style="float:right"> <a href="settings.html" class="menu"> Settings </a> </li>
+								<a href="index.html" style="float:center" class="logo"><img src="assets/lob_logo.png"></a>
+
+			</ul>
+			<div class="top-text">
+				<h1> Past Orders </h1>
+			</div>
+			<div class="past-order"></div>
+		</div>
+    </div>
+</body>
+</html>

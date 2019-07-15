@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Lettuce Olive Better > Menus </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Arimo">
+    <link rel="stylesheet" href="assets/pushy-buttons/css/pushy-buttons.css">
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="assets/circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="lob_logo.png">
+
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAdvHgYr47afQTdqDYE5OKLDy-Ok1_5TtE",
+		authDomain: "lettuce-olive-better-6a989.firebaseapp.com",
+		databaseURL: "https://lettuce-olive-better-6a989.firebaseio.com",
+		projectId: "lettuce-olive-better-6a989",
+		storageBucket: "",
+		messagingSenderId: "199181056448"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+	<link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+	
+	
+</head>
+<body onload="make_calorie_dial();">
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="assets/circliful/js/jquery.circliful.min.js"></script>
+	<script src="./script.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="overhang/overhang.min.css" />
+	<script type="text/javascript" src="overhang/overhang.min.js"></script>
+
+	<div class="full-page">
+		<div class="bg-image"> </div>
+		<div class="bg-text">
+			<ul class="menu">
+				<li class="menu"> <a href="index.html" class="menu"> Home </a> </li>
+				<li class="menu"> <a href="menus.html" class="menu"> Menus </a> </li>
+				<li class="menu"> <a href="past_orders.html" class="menu"> Past Orders </a> </li>
+				<li style="float:right"> <a href="settings.html" class="menu"> Settings </a> </li>
+								<a href="index.html" style="float:center" class="logo"><img src="assets/lob_logo.png"></a>
+
+			</ul>
+			<div class="top-text">
+				<h1> Menus </h1>
+			</div>
+			<div class="middle-text-menu">
+				<div class="glass-menu">
+				<table align="center" cellpadding="20" border=1 frame=void rules=rows style="width: 45%; height: 100%;">
+					<tbody>
+						<tr>
+							<td>
+								<a href="bruincafe_menu.html"  style="color: white; display: block">
+									<img src="assets/bruincafe-logo.jpg" style="width: 80px; height: 50px;">
+								</a>
+							</td>
+							<!-- <td>
+							<a href="bruincafe_menu.html" style="color: white; display: block">BruinCafé
+							</a>
+							</td> -->
+								
+						</tr>
+						<tr>
+							<td><a href="hedrick_study_menu.html"  style="color: white; display: block"><img src="assets/hedrickstudy-logo.jpg" style="width: 100px; height: 50px;"></a></td>
+							<!-- <td><a href="hedrick_study_menu.html"  style="color: white; display: block">Hedrick Study</a></td> -->
+						</tr>
+						<tr>
+							<td>
+								<a href="cafe1919_menu.html"  style="color: white; display: block"><img src="assets/cafe1919-logo.jpg" style="width: 80px; height: 60px; background-color: #7aaaf9;"></a></td>
+							<!-- <td><a href="cafe1919_menu.html"  style="color: white; display: block">Café 1919</a></td> -->
+						</tr>
+						<tr>
+							<td>
+								<a href="rendezvous_menu.html" style="color: white; display: block">
+								
+								<img src="assets/rendezvous-logo.jpg" style="width: 120px; height: 50px; background-color: #4E484C">
+								
+							</a></td>
+							<!-- td><a href="rendezvous_menu.html"  style="color: white; display: block">Rendezvous</a></td> -->
+						</tr>
+					</tbody>
+				</table>
+				
+				</div>
+			</div>
+    <script src="assets/get-time/get-time.js"></script>
+    <script>
+    	 // $("#test-circle").circliful({
+      //           animationStep: 5,
+      //           foregroundBorderWidth: 5,
+      //           backgroundBorderWidth: 15,
+      //           percent: 75
+      //      });
+    </script>
+</body>
+</html>
